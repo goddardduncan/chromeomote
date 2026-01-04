@@ -1,6 +1,7 @@
 #!/bin/bash
-
-pkill python3
-nohup python3 /home/duncan/server.py > /dev/null 2>&1 &
+pkill bun
+nohup /usr/local/bin/bun /home/duncan/apps/remote/server.ts > /dev/null 2>&1 &
+#pkill python3
+#nohup python3 /home/duncan/server.py > /dev/null 2>&1 &
 
 echo "Bridge started in background."
